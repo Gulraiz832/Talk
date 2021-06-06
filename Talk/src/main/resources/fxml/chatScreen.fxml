@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="627.0" prefWidth="966.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.talk.FXMLController">
+   <children>
+     <!-- <Button layoutX="809.0" layoutY="8.0" mnemonicParsing="false" onAction="#createGroup" prefHeight="38.0" prefWidth="150.0" text="CreateGroup" /> -->
+      <AnchorPane fx:id="subparent" layoutX="4.0" layoutY="3.0" prefHeight="619.0" prefWidth="191.0">
+         <children>
+            <Label layoutX="6.0" layoutY="5.0" prefHeight="31.0" prefWidth="173.0" text="                 Friends" />
+            <VBox fx:id="b" layoutX="-3.0" layoutY="36.0" prefHeight="579.0" prefWidth="191.0">
+               <children>
+                  <Button fx:id="button1" mnemonicParsing="false" onAction="#setSession" prefHeight="59.0" prefWidth="193.0" text="Button" visible="false" />
+                  <Separator prefWidth="200.0" />
+                  <Button fx:id="button2" mnemonicParsing="false" onAction="#setSession" prefHeight="68.0" prefWidth="191.0" text="Button" visible="false" />
+                  <Separator prefWidth="200.0" />
+                  <Button fx:id="button3" mnemonicParsing="false" onAction="#setSession" prefHeight="72.0" prefWidth="193.0" text="Button" visible="false" />
+                  <Separator prefWidth="200.0" />
+                  <Button fx:id="button4" mnemonicParsing="false" onAction="#setSession" prefHeight="69.0" prefWidth="194.0" text="Button" visible="false" />
+                  <Separator prefWidth="200.0" />
+                  <Button fx:id="button5" mnemonicParsing="false" onAction="#setSession" prefHeight="69.0" prefWidth="190.0" text="Button" visible="false" />
+                  <Separator prefWidth="200.0" />
+                  <Button fx:id="button6" mnemonicParsing="false" onAction="#setSession" prefHeight="64.0" prefWidth="194.0" text="Button" visible="false" />
+                  <Separator prefWidth="200.0" />
+                  <Button fx:id="button7" mnemonicParsing="false" onAction="#setSession" prefHeight="75.0" prefWidth="195.0" text="Button" visible="false" />
+                  <Separator prefWidth="200.0" />
+                  <Button fx:id="button8" mnemonicParsing="false" onAction="#setSession" prefHeight="71.0" prefWidth="199.0" text="Button" visible="false" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="193.0" layoutY="2.0" orientation="VERTICAL" prefHeight="619.0" prefWidth="6.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                
+               </light>
+            </Lighting>
+         </effect>
+      </Separator>
+      
+      <TextField id="msg" fx:id="msg" layoutX="199.0" layoutY="590.0" prefHeight="31.0" prefWidth="520.0">
+         <cursor>
+            
+         </cursor>
+      </TextField>
+      <Button fx:id="send" disable="true" layoutX="722.0" layoutY="583.0" mnemonicParsing="false" onAction="#sendmsg" prefHeight="38.0" prefWidth="76.0" text="Send" />
+      <ImageView fitHeight="38.0" fitWidth="95.0" layoutX="436.0" layoutY="550.0" onMouseClicked="#sendEmoji" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image fx:id="a1im" url="@a1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="38.0" layoutX="553.0" layoutY="554.0" onMouseClicked="#sendEmoji1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image fx:id="a2im" url="@b.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="45.0" layoutX="225.0" layoutY="552.0" onMouseClicked="#sendEmoji2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image fx:id="a3im" url="@c.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="329.0" layoutY="552.0" onMouseClicked="#sendEmoji2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image fx:id="a4im" url="@d.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="log" layoutY="2.0" prefHeight="627.0" prefWidth="966.0">
+         <children>
+            <ImageView fitHeight="735.0" fitWidth="1282.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@blur-blurry-bokeh-close-up-347139.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="user" layoutX="357.0" layoutY="144.0" />
+            <PasswordField fx:id="pass" layoutX="358.0" layoutY="210.0" />
+            <Label layoutX="241.0" layoutY="153.0" text="username" />
+            <Label layoutX="243.0" layoutY="223.0" text="password" />
+            <Button fx:id="sign" layoutX="398.0" layoutY="305.0" mnemonicParsing="false" onAction="#check" text="SignIn" />
+         </children>
+         
+      </AnchorPane>
+      <!--
+      <VBox fx:id="group" layoutX="809.0" layoutY="46.0" prefHeight="316.0" prefWidth="152.0">
+         <children>
+            <Separator prefWidth="200.0" visible="false" />
+            <Button fx:id="b1" mnemonicParsing="false" onAction="#add" prefHeight="32.0" prefWidth="151.0" text="Button" visible="false" />
+            <Separator prefWidth="200.0" visible="false" />
+            <Button fx:id="b2" mnemonicParsing="false" onAction="#add" prefHeight="32.0" prefWidth="150.0" text="Button" visible="false" />
+            <Separator prefWidth="200.0" visible="false" />
+            <Button fx:id="b3" mnemonicParsing="false" onAction="#add" prefHeight="30.0" prefWidth="157.0" text="Button" visible="false" />
+            <Separator prefWidth="200.0" visible="false" />
+            <Button fx:id="b4" mnemonicParsing="false" onAction="#add" prefHeight="32.0" prefWidth="151.0" text="Button" visible="false" />
+            <Separator prefWidth="200.0" visible="false" />
+            <Button fx:id="b5" mnemonicParsing="false" onAction="#add" prefHeight="32.0" prefWidth="151.0" text="Button" visible="false" />
+            <Separator prefWidth="200.0" visible="false" />
+            <Button fx:id="b6" mnemonicParsing="false" onAction="#add" prefHeight="32.0" prefWidth="150.0" text="Button" visible="false" />
+            <Separator prefWidth="200.0" visible="false" />
+            <Button fx:id="b7" mnemonicParsing="false" onAction="#add" prefHeight="32.0" prefWidth="153.0" text="Button" visible="false" />
+            <Separator prefWidth="200.0" visible="false" />
+            <Button fx:id="b10" mnemonicParsing="false" onAction="#add" prefHeight="32.0" prefWidth="156.0" text="Button" visible="false" />
+            <Separator prefWidth="200.0" visible="false" />
+            <Button fx:id="ok" mnemonicParsing="false" onAction="#addinList" text="Ok" visible="false" />
+            <Separator prefWidth="200.0" visible="false" />
+         </children>
+      </VBox>
+     
+      <Button fx:id="Group3" layoutX="806.0" layoutY="538.0" mnemonicParsing="false" onAction="#setGroupSession" prefHeight="70.0" prefWidth="153.0" text="Group3" visible="false" />
+      <Button fx:id="Group2" layoutX="808.0" layoutY="458.0" mnemonicParsing="false" onAction="#setGroupSession" prefHeight="65.0" prefWidth="151.0" text="Group2" visible="false" />
+      <Button fx:id="group1" layoutX="806.0" layoutY="372.0" mnemonicParsing="false" onAction="#setGroupSession" prefHeight="68.0" prefWidth="156.0" text="Group1" visible="false" />
+      <VBox layoutX="801.0" layoutY="421.0" prefHeight="200.0" prefWidth="173.0" />
+      
+       -->
+   </children>
+</AnchorPane>
+

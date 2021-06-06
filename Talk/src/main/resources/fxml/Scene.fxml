@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="667.0" prefWidth="790.0" style="-fx-background-image: url(&quot;p.jpg&quot;);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.talk.FXMLController">
+    <children>
+      <ImageView fitHeight="687.0" fitWidth="855.0" layoutX="-4.0" layoutY="-14.0">
+         <image>
+            <Image url="@blur-blurry-bokeh-close-up-347139.jpg" />
+         </image>
+      </ImageView>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button fx:id="signin" layoutX="399.0" layoutY="334.0" mnemonicParsing="false" onAction="#start" text="Sign In">
+         <effect>
+            <Reflection topOpacity="0.62" />
+         </effect>
+      </Button>
+      <Label layoutX="212.0" layoutY="210.0" prefHeight="34.0" prefWidth="82.0" text="     Username" />
+      <Label layoutX="231.0" layoutY="264.0" prefHeight="34.0" prefWidth="62.0" text="Password" />
+      <TextField id="name" layoutX="348.0" layoutY="214.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <PasswordField layoutX="348.0" layoutY="268.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </PasswordField>
+      <Label alignment="CENTER" layoutX="355.0" layoutY="85.0" prefHeight="71.0" prefWidth="121.0" text="LogIn" textFill="#3c3838">
+         <font>
+            <Font name="Constantia" size="22.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
