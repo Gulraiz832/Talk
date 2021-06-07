@@ -13,7 +13,7 @@ This is JAVA GUI Based chat application where user can send messages to each oth
 ## Preview
 The images of working application are as below
 ### Sign in Page
-![sign_in]()
+![sign_in](https://github.com/Gulraiz832/Talk/blob/main/talk_images/login.PNG)
 
 ### Chat Page
-![chat_page]()
+![chat_page](https://github.com/Gulraiz832/Talk/blob/main/talk_images/chatpage.PNG)
